@@ -1,0 +1,81 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\corePackages\Core.Application\Core.Application.csproj" />
+    <ProjectReference Include="..\..\corePackages\Core.CrossCuttingConcerns\Core.CrossCuttingConcerns.csproj" />
+    <ProjectReference Include="..\..\corePackages\Core.ElasticSearch\Core.ElasticSearch.csproj" />
+    <ProjectReference Include="..\..\corePackages\Core.Mailing\Core.Mailing.csproj" />
+    <ProjectReference Include="..\..\corePackages\Core.Persistence\Core.Persistence.csproj" />
+    <ProjectReference Include="..\..\corePackages\Core.Security\Core.Security.csproj" />
+    <ProjectReference Include="..\..\corePackages\Core.Utilities\Core.Utilities.csproj" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\AdditionalServices\Tests\" />
+    <Folder Include="Features\Brands\Tests\" />
+    <Folder Include="Features\burdan kopyala\Commands\" />
+    <Folder Include="Features\burdan kopyala\Dtos\" />
+    <Folder Include="Features\burdan kopyala\Models\" />
+    <Folder Include="Features\burdan kopyala\Profiles\" />
+    <Folder Include="Features\burdan kopyala\Queries\" />
+    <Folder Include="Features\burdan kopyala\Rules\" />
+    <Folder Include="Features\burdan kopyala\Tests\" />
+    <Folder Include="Features\CarDamages\Models\" />
+    <Folder Include="Features\CarDamages\Queries\" />
+    <Folder Include="Features\CarDamages\Tests\" />
+    <Folder Include="Features\Cars\Tests\" />
+    <Folder Include="Features\Cities\Commands\" />
+    <Folder Include="Features\Cities\Rules\" />
+    <Folder Include="Features\Cities\Tests\" />
+    <Folder Include="Features\Colors\Tests\" />
+    <Folder Include="Features\CorporateCustomers\Models\" />
+    <Folder Include="Features\CorporateCustomers\Queries\" />
+    <Folder Include="Features\CorporateCustomers\Tests\" />
+    <Folder Include="Features\CreditCardInfos\Commands\" />
+    <Folder Include="Features\CreditCardInfos\Models\" />
+    <Folder Include="Features\CreditCardInfos\Profiles\" />
+    <Folder Include="Features\CreditCardInfos\Queries\" />
+    <Folder Include="Features\CreditCardInfos\Rules\" />
+    <Folder Include="Features\CreditCardInfos\Tests\" />
+    <Folder Include="Features\Fuels\Tests\" />
+    <Folder Include="Features\IndividualCustomers\Models\" />
+    <Folder Include="Features\IndividualCustomers\Queries\" />
+    <Folder Include="Features\IndividualCustomers\Tests\" />
+    <Folder Include="Features\Invoices\Tests\" />
+    <Folder Include="Features\Maintenances\Tests\" />
+    <Folder Include="Features\Models\Tests\" />
+    <Folder Include="Features\OperationClaims\Models\" />
+    <Folder Include="Features\OperationClaims\Queries\" />
+    <Folder Include="Features\OperationClaims\Tests\" />
+    <Folder Include="Features\Payments\Models\" />
+    <Folder Include="Features\Payments\Queries\" />
+    <Folder Include="Features\Payments\Tests\" />
+    <Folder Include="Features\PromotionCodes\Tests\" />
+    <Folder Include="Features\Rentals\Tests\" />
+    <Folder Include="Features\Rentals\Models\" />
+    <Folder Include="Features\Transmissions\Commands\" />
+    <Folder Include="Features\Transmissions\Dtos\" />
+    <Folder Include="Features\Transmissions\Models\" />
+    <Folder Include="Features\Transmissions\Profiles\" />
+    <Folder Include="Features\Transmissions\Queries\" />
+    <Folder Include="Features\Transmissions\Rules\" />
+    <Folder Include="Features\Transmissions\Tests\" />
+    <Folder Include="Features\Users\Tests\" />
+  </ItemGroup>
+
+</Project>
